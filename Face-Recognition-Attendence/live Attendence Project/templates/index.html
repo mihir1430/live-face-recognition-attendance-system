@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition Attendance System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Face Recognition Attendance System</h1>
+        <div class="video-container">
+            <img src="{{ url_for('video_feed') }}" class="video-feed" />
+        </div>
+    </div>
+
+    <!-- Include JavaScript file (if needed) -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
